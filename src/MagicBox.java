@@ -4,8 +4,8 @@ public class MagicBox<T> {
     protected T[] magicBox;
     Random random = new Random();
 
-    public MagicBox(T[] magicBox) {
-        this.magicBox = magicBox;
+    public MagicBox(int size) {
+        magicBox = (T[]) new Object[size];
     }
 
     protected boolean add(T item) {
